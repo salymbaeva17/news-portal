@@ -19,6 +19,9 @@
 .header-link:hover{
     color: #d81111;
 }
+.header-link.active{
+    color: #d81111;
+}
 .logo{
     margin-left: -24px;
 }

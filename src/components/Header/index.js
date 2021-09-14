@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css"
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {Logo} from "../images";
 
 const Header = () => {
@@ -9,10 +9,10 @@ const Header = () => {
             <div className="container header-box">
                 <Link to="/" className="logo"><Logo/></Link>
                 <nav className="navbar">
-                    <Link className="header-link" to="/">Главная</Link>
-                    <Link className="header-link" to="/news">Новости</Link>
-                    <Link className="header-link" to="/login">Войти</Link>
-                    <Link className="header-link" to="/signin">Зарегистрироваться</Link>
+                    <NavLink exact className="header-link" to="/">Главная</NavLink>
+                    <NavLink className="header-link" to="/news">Новости</NavLink>
+                    <NavLink className="header-link" to="/login">Войти</NavLink>
+                    <NavLink className="header-link" to="/signin">Зарегистрироваться</NavLink>
                 </nav>
             </div>
         </header>

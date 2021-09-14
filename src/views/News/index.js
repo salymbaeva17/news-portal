@@ -11,7 +11,7 @@ const News = () => {
     }, [])
     return (
         <Layout>
-            <div className="row">
+            <div className="row my-5">
                 {
                     news.map(item =>
                         <div key={item.id} className="col-md-3">
