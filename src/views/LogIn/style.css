@@ -1,0 +1,80 @@
+.modal-wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 60px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    z-index: 2;
+}
+.modal-component{
+
+    padding: 47px 40px;
+    background-color: #fff;
+    height: 539px;
+    width: 429px;
+    margin: auto;
+}
+.modal-title {
+    font-size: 30px;
+    line-height: 35px;
+    color: #1A202C;
+    text-align: center;
+}
+.modal-desc {
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D3748;
+    margin: 14px 0 13px;
+    text-align: center;
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:nth-child(1) {
+    margin-bottom: 13px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4A5568;
+}
+.form-group input {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    padding: 17px 0 17px 20px;
+    display: inline-block;
+    min-width: 350px;
+}
+.form-group:nth-child(2) input {
+    padding: 20px 0 14px 20px;
+}
+
+.quest-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 28px 0 27px;
+}
+
+.radio-btn {
+    display: flex;
+    align-items: center;
+}
+.radio-label {
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D3748;
+    margin-left: 11px;
+}
+.form-link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #2C5282;
+}

@@ -1,0 +1,52 @@
+.button {
+    border-radius: 5px;
+    border: none;
+    padding: 9px 11px;
+    display: inline-block;
+}
+
+.button-danger {
+    background-color: #fe0000;
+    border-color: #fe0000;
+}
+
+.button-success {
+    background-color: #0fc015;
+    border-color: #0fc015;
+}
+
+.button-primary {
+    background-color: #0277df;
+    border-color: #0277df;
+}
+
+.button-warning {
+    background-color: #deb30a;
+    border-color: #deb30a;
+}
+
+.button-login {
+    border-radius: 8px;
+    display: inline-block;
+    padding: 15px 0 16px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    background: #04C45C;
+    border: none;
+}
+.button-google{
+    padding: 15px 0;
+    border: none;
+    background: #2D3748;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
