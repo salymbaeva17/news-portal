@@ -15,8 +15,8 @@ function App() {
             <Route exact path="/"><HomePage /></Route>
             <Route exact path="/news"><News /></Route>
             <Route path="/news-details/:id"><NewsDetails /></Route>
-            <Route path="/signin"><SignIn /></Route>
-            <Route path="/login"><LogIn /></Route>
+            <Route exact path="/signin"><SignIn /></Route>
+            <Route exact path="/login"><LogIn /></Route>
             <Route path="*"><NotFound /></Route>
         </Switch>
       </Router>

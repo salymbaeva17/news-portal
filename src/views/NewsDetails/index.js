@@ -21,7 +21,7 @@ const NewsDetails = () => {
             })
             .catch(() => setNotFound(true))
             .finally(()=> setIsLoading(false))
-    }, [])
+    }, [params.id])
     if (isLoading) return <Spinner />
     if(notFound) return <NotFound />
     return (
