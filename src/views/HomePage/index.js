@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import Layout from "../../components/Layout";
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Carousel from 'react-bootstrap/Carousel'
 import axios from "axios";
 import Spinner from "../../components/Spinner";
 import NotFound from "../NotFound";
+import "./style.css"
+import {Link} from "react-router-dom";
 
 const HomePage = () => {
     const [news, setNews] = useState([])
@@ -24,15 +24,34 @@ const HomePage = () => {
     if (notFound) return <NotFound />
     return (
         <Layout>
-            <OwlCarousel className='owl-theme' autoplay={1000} loop={true} center dots={false} items={2} stagePadding={50} margin={5}>
+            <Carousel fade
+                      className="my-md-3"
+            >
                 {
                     news.map(item =>
-                    <div>
-                        <img width={100} height="570px" src={item.image} alt={item.title} />
-                        <p className="text-center mt-2">{item.tagline}</p>
-                    </div>)
+                        <Carousel.Item>
+                            <Link to={`/news-details/${item.id}`}>
+                                <img
+                                    className="d-block"
+                                    src={item.image}
+                                    alt={item.title}
+                                />
+                                <Carousel.Caption  style={
+                                    {
+                                        color: "#fff",
+                                        backgroundColor: "#808080b3"
+                                    }
+                                }>
+                                    <h3>{item.title}</h3>
+                                    <p>{item.tagline}</p>
+                                </Carousel.Caption>
+                            </Link>
+                        </Carousel.Item>
+                    )
                 }
-            </OwlCarousel>
+
+
+            </Carousel>
         </Layout>
     );
 };
