@@ -29,7 +29,6 @@ const LogIn = () => {
                                 <Link to="/" className="form-link">Forgot password?</Link>
                             </div>
                             <Button variant="login" text="Войти"/>
-                            <Button variant="google" text="Or sign-in with google"/>
                         </form>
                     </div>
                 </div>

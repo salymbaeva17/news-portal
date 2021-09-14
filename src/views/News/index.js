@@ -2,13 +2,24 @@ import React, {useEffect, useState} from 'react';
 import Layout from "../../components/Layout";
 import axios from "axios";
 import {Link} from "react-router-dom";
+import Spinner from "../../components/Spinner";
+import NotFound from "../NotFound";
 
 const News = () => {
     const [news, setNews] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
+    const [notFound, setNotFound] = useState(false)
     useEffect(() => {
         axios(`https://613ae97d110e000017a453d0.mockapi.io/news-site`)
-            .then(({data}) => setNews(data))
+            .then(({data}) => {
+                setNews(data)
+                setIsLoading(false)
+            })
+            .catch(() => setNotFound(true))
+            .finally(()=> setIsLoading(false))
     }, [])
+    if (isLoading) return <Spinner />
+    if (notFound) return <NotFound />
     return (
         <Layout>
             <div className="row my-5">

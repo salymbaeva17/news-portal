@@ -12,7 +12,7 @@ const Header = () => {
                     <NavLink exact className="header-link" to="/">Главная</NavLink>
                     <NavLink className="header-link" to="/news">Новости</NavLink>
                     <NavLink className="header-link" to="/login">Войти</NavLink>
-                    <NavLink className="header-link" to="/signin">Зарегистрироваться</NavLink>
+                    <NavLink className="header-link" to="/signup">Зарегистрироваться</NavLink>
                 </nav>
             </div>
         </header>

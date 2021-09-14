@@ -8,10 +8,10 @@
     justify-content: center;
     z-index: 2;
 }
-.modal-component{
-    padding: 47px 40px;
+.modal-box{
+    padding: 30px 40px;
+    height: 691px;
     background-color: #fff;
-    height: 495px;
     width: 429px;
     margin: auto;
 }
