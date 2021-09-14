@@ -18,7 +18,7 @@ const HomePage = () => {
                 setIsLoading(false)
             })
             .catch(() => setNotFound(true))
-            .finally(()=> setIsLoading(false))
+            // .finally(()=> setIsLoading(false))
         }, [])
     if (isLoading) return <Spinner />
     if (notFound) return <NotFound />
