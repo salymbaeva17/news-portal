@@ -35,6 +35,7 @@ const HomePage = () => {
                                     className="d-block"
                                     src={item.image}
                                     alt={item.title}
+                                    style={{height: "640px", objectFit: "cover"}}
                                 />
                                 <Carousel.Caption  style={
                                     {

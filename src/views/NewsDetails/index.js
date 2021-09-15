@@ -41,7 +41,7 @@ const NewsDetails = () => {
                                     <p>Алина <span>12.03.2021</span>
                                         <p>Опять?!</p>
                                     </p>
-                            <textarea className="pt-3 pl-3 ps-3 pe-3" placeholder="Комментарий..." id="" cols="93" rows="6" />
+                            <textarea style={{width: "100%"}} className="pt-3 pl-3 ps-3 pe-3" placeholder="Комментарий..." id="" cols="8" rows="6" />
                             <div className="d-flex justify-content-end">
                                 <Button  variant="primary" text="Отправить"/>
                             </div>

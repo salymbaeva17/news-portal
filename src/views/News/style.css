@@ -1,0 +1,9 @@
+.news-box h5 {
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    transition: .6s;
+}
+
+.news-box:hover h5{
+    color: #cc0100;
+}

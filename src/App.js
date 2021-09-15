@@ -4,7 +4,6 @@ import News from "./views/News";
 import NewsDetails from "./views/NewsDetails";
 import SignUp from "./views/SignUp";
 import LogIn from "./views/LogIn";
-import "./style.css"
 import NotFound from "./views/NotFound";
 
 

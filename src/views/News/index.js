@@ -4,6 +4,7 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 import Spinner from "../../components/Spinner";
 import NotFound from "../NotFound";
+import "./style.css"
 
 const News = () => {
     const [news, setNews] = useState([])
@@ -25,10 +26,10 @@ const News = () => {
             <div className="row my-5">
                 {
                     news.map(item =>
-                        <div key={item.id} className="col-md-3">
+                        <div key={item.id} className="col-md-4 col-sm-12 mb-4">
                             <Link to={`/news-details/${item.id}`} className="news-box">
-                                <img src={item.image} alt={item.title}/>
-                                <h5>{item.title}</h5>
+                                <img src={item.image} style={{width: "100%"}} alt={item.title}/>
+                                <h5 className="mt-2">{item.title}</h5>
                             </Link>
                         </div>
                     )
