@@ -17,7 +17,7 @@ const News = () => {
                 setIsLoading(false)
             })
             .catch(() => setNotFound(true))
-            .finally(()=> setIsLoading(false))
+            .finally(() => setIsLoading(false))
     }, [])
     if (isLoading) return <Spinner />
     if (notFound) return <NotFound />
@@ -27,8 +27,8 @@ const News = () => {
                 {
                     news.map(item =>
                         <div key={item.id} className="col-md-4 col-sm-12 mb-4">
-                            <Link to={`/news-details/${item.id}`} className="news-box">
-                                <img src={item.image} style={{width: "100%"}} alt={item.title}/>
+                            <Link to={`/news/${item.id}`} className="news-box">
+                                <img src={item.image} style={{width: "100%"}} className="img" alt={item.title}/>
                                 <h5 className="mt-2">{item.title}</h5>
                             </Link>
                         </div>

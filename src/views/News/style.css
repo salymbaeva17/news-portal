@@ -7,3 +7,6 @@
 .news-box:hover h5{
     color: #cc0100;
 }
+.news-box > .img{
+    height: 255px;
+}

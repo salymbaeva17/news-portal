@@ -24,9 +24,7 @@ const HomePage = () => {
     if (notFound) return <NotFound />
     return (
         <Layout>
-            <Carousel fade
-                      className="my-md-3"
-            >
+            <Carousel fade className="mt-md-3">
                 {
                     news.map(item =>
                         <Carousel.Item>
