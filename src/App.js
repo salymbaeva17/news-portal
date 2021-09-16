@@ -5,6 +5,7 @@ import NewsDetails from "./views/NewsDetails";
 import SignUp from "./views/SignUp";
 import LogIn from "./views/LogIn";
 import NotFound from "./views/NotFound";
+import Requests from "./views/Requests";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/news/:id"><NewsDetails /></Route>
             <Route exact path="/signup"><SignUp /></Route>
             <Route exact path="/login"><LogIn /></Route>
+            <Route path="/requests"><Requests /></Route>
             <Route path="*"><NotFound /></Route>
         </Switch>
       </Router>
