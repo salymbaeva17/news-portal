@@ -1,4 +1,4 @@
-.modal-wrapper{
+.modal-wrapp{
     display: flex;
     align-items: center;
     height: 100%;
@@ -10,7 +10,7 @@
 }
 .modal-box{
     padding: 30px 40px;
-    height: 691px;
+    height: 735px;
     background-color: #fff;
     width: 429px;
     margin: auto;
@@ -33,7 +33,7 @@
     flex-direction: column;
 }
 
-.form-group:nth-child(1) {
+.form-group{
     margin-bottom: 13px;
 }
 

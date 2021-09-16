@@ -7,7 +7,7 @@ import "./style.css"
 const SignUp = () => {
     return (
         <Layout>
-            <div className="modal-wrapper">
+            <div className="modal-wrapp">
                 <div className="modal-box">
                     <h1 className="modal-title">Sign Up</h1>
                     <p className="modal-desc">Welcome!</p>
@@ -25,8 +25,8 @@ const SignUp = () => {
                             <input type="password" id="password" placeholder="*********" required/>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="password">Retype Password</label>
-                            <input type="password" id="password" placeholder="*********" required/>
+                            <label htmlFor="second-password">Retype Password</label>
+                            <input type="password" id="second-password" placeholder="*********" required/>
                         </div>
                         <div className="quest-group">
                             <div className="radio-btn">
