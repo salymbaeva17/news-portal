@@ -26,7 +26,7 @@ const Requests = () => {
                 <Table striped bordered hover variant="dark" >
                     <thead>
                     <tr>
-                        <th>#</th>
+                        <th>№</th>
                         <th>Name</th>
                         <th>Email Address</th>
                         <th>Phone Number</th>
@@ -34,9 +34,9 @@ const Requests = () => {
                     </thead>
                     <tbody>
                     {
-                        users.map(item =>
-                            <tr>
-                                <td>{item.id}</td>
+                        users.map((item, idx) =>
+                            <tr key={item.id}>
+                                <td>{idx+1}</td>
                                 <td>{item.name}</td>
                                 <td>{item.email}</td>
                                 <td>{item.phone}</td>

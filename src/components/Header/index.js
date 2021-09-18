@@ -34,6 +34,7 @@ const Header = () => {
                     <NavLink exact className="header-link" to="/">Главная</NavLink>
                     <NavLink className="header-link" to="/news">Новости</NavLink>
                     <NavLink className="header-link" to="/requests">Заявки</NavLink>
+                    <NavLink className="header-link" to="/students">Студенты</NavLink>
                     <NavLink className="header-link" to="/login">Войти</NavLink>
                     <NavLink className="header-link" to="/signup">Зарегистрироваться</NavLink>
                     <button type="button" className="callback" onClick={() => setIsOpen(true)}>Связаться со мной</button>

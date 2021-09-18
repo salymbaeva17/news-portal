@@ -6,6 +6,7 @@ import SignUp from "./views/SignUp";
 import LogIn from "./views/LogIn";
 import NotFound from "./views/NotFound";
 import Requests from "./views/Requests";
+import Students from "./views/Students";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/signup"><SignUp /></Route>
             <Route exact path="/login"><LogIn /></Route>
             <Route path="/requests"><Requests /></Route>
+            <Route path="/students"><Students /></Route>
             <Route path="*"><NotFound /></Route>
         </Switch>
       </Router>
