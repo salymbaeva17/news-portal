@@ -1,9 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Button from "../Button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEdit, faTrash} from "@fortawesome/free-solid-svg-icons";
+import {useForm} from "react-hook-form";
 
-const StudentItem = ({item, idx,deleteStudent}) => {
+const StudentItem = ({item, idx,deleteStudent, customStyles}) => {
+    const {register, handleSubmit, formState: {errors}} = useForm();
+    const [modalIsOpen, setIsOpen] = useState(false)
+
+    //
+    // const handleUpdate = (data) => {
+    //     editStudent(item.id, data)
+    //     setIsOpen(false)
+    // }
+
     return (
         <tr>
             <td>{idx + 1}</td>

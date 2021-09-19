@@ -61,7 +61,7 @@ const Students = () => {
                     </thead>
                     <tbody>
                     {students.map((item, idx) =>
-                       <StudentItem key={item.id} item={item} idx={idx} showModal={showModal} deleteStudent={deleteStudent}/>)}
+                       <StudentItem key={item.id} item={item} idx={idx} showModal={showModal} customStyles={customStyles} deleteStudent={deleteStudent}/>)}
                     </tbody>
                 </Table>
                 <Button display="block" margin="auto" text="Добавить нового студента" onClick={() => setShowModal(true)} />
